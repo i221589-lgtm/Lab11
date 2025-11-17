@@ -28,7 +28,7 @@ pipeline {
 }
 stage('Test') {
     when {
-        expression { return true } // change condition as needed
+        expression { return false } // change condition as needed
     }
     steps {
         echo 'Testing..'
