@@ -21,6 +21,12 @@ pipeline {
                 echo 'Deploying...'
                 // Here you can define commands for your deployment
             }
+            post {
+    always {
+        echo 'Build complete!'
+    }
+}
+
         }
     }
 }
